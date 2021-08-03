@@ -6,12 +6,12 @@ import { NFTDescriptor, NFTDescriptorTest, NFTV2 } from '../typechain'
 
 use(require('chai-bignumber')())
 
-const overrides = { gasLimit: 12450000 }
+const overrides = { gasLimit: 9500000 }
 
 describe('NFTV2', async function () {
     const provider = waffle.provider
     const wallets = provider.getWallets()
-    const [wallet, other, owner] = wallets
+    const [wallet, owner] = wallets
     const name = '88mph cDAI Pool Bond'
     const symbol = '88mph-cDAI-POOL-BOND'
     const tokenId = 10
@@ -24,8 +24,8 @@ describe('NFTV2', async function () {
         nft: NFTV2
         nftDescriptor: NFTDescriptorTest
     }> = async () => {
-        const nftDescriptorLibraryFactory = await ethers.getContractFactory('NFTDescriptor')
-        const nftDescriptorLibrary = (await nftDescriptorLibraryFactory.deploy()) as NFTDescriptor
+        const NFTDescriptorLibraryFactory = await ethers.getContractFactory('NFTDescriptor')
+        const nftDescriptorLibrary = (await NFTDescriptorLibraryFactory.deploy()) as NFTDescriptor
 
         const [NFTV2, NFTDescriptorTestFactory] = await Promise.all([
             ethers.getContractFactory('NFTV2', {
