@@ -62,7 +62,7 @@ library NFTSVG {
                 '<g fill="black" font-family="monospace" font-style="bold" font-weight="bolder" style="text-shadow:4px 4px #558ABB; text-align:center;">',
                 '<text><tspan x="35" y="105" dx="20" font-size="25">',
                 params.name,
-                '</tspan><tspan x="30" y="165" dx="10" font-size="12" >',
+                '</tspan><tspan x="35" y="165" dx="10" font-size="12" >',
                 params.owner,
                 '</tspan><tspan x="165" y="190" dx="10" font-size="12" >tokenId :',
                 params.tokenId.toString(),

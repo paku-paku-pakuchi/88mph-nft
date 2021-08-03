@@ -65,7 +65,7 @@
 <text>
 <tspan x="35" y="105" dx="20" font-size="25">
 88mph cDAI Pool Bond</tspan>
-<tspan x="30" y="165" dx="10" font-size="12" >
+<tspan x="35" y="165" dx="10" font-size="12" >
 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266</tspan>
 <tspan x="165" y="190" dx="10" font-size="12" >
 tokenId :1</tspan>
