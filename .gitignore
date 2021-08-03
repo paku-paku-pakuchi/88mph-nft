@@ -1,0 +1,24 @@
+/node_modules
+
+# env variables
+.env
+
+# logg
+*.log
+
+# hardhat
+**/hardhat-deploy/
+artifacts
+cache
+typechain
+
+# macOS
+.DS_Store
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage.json
+
+# images
+images/*
+!images/sample-nft-image[0-9].svg
