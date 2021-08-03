@@ -8,7 +8,7 @@ import 'hardhat-etherscan-abi'
 import 'hardhat-dependency-compiler'
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY
-const ROPSTEN_ALCHEMY_API_KEY = process.env.ROPSTEN_ALCHEMY_API_KEY
+const RINKEBY_ALCHEMY_API_KEY = process.env.RINKEBY_ALCHEMY_API_KEY
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 const BLOCK_NUMBER = process.env.BLOCK_NUMBER
 const MNEMONIC = process.env.MNEMONIC
@@ -43,8 +43,8 @@ const config: HardhatUserConfig = {
                 enabled: true,
             },
         },
-        ropsten: {
-            url: `https://eth-ropsten.alchemyapi.io/v2/${ROPSTEN_ALCHEMY_API_KEY}`,
+        rinkeby: {
+            url: `https://eth-ropsten.alchemyapi.io/v2/${RINKEBY_ALCHEMY_API_KEY}`,
             accounts: {
                 mnemonic: MNEMONIC,
             },
