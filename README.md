@@ -4,9 +4,9 @@ On-chain NFT for 88mph Bond token, inspired by Uniswap V3 NFT. NFT's Image is sa
 ### Concept
 88mph is a DeFi protocol for providing fixed-term fixed-rate interest. It does so by pooling deposits with differing maturations and fixed-rates together and putting the funds in a yield-generating protocol, such as Compound, Aave, and yEarn, to earn floating-rate interest. 
 
-88mph's Bond token is NFT, which users can trade on the markets like OpenSea. There are no URIs registered in the `tokenURI()` of 88mph, and when I saw them in OpenSea, I thought it was a shame. 
+88mph's Bond token is NFT, which users can trade on the markets like OpenSea. There are no URIs registered in the `tokenURI()` of 88mph, and when I saw them in OpenSea, I thought it was a shame though the product is good. 
 
-`NFTV2` contract inherits 88mph's Bond `NFT` contract. `tokenURI()` returns string which contains the encoded SVG, but the owner can rewrite token uri by calling `setTokenURI()`
+`NFTV2` contract inherits 88mph's Bond `NFT` contract. `tokenURI()` returns string which contains the encoded SVG, but the owner can rewrite token URI by calling `setTokenURI()`
 
 [88mph app](https://88mph.app)  
 
