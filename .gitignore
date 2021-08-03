@@ -7,7 +7,7 @@
 *.log
 
 # hardhat
-**/hardhat-deploy/
+**/hardhat-dependency-compiler
 artifacts
 cache
 typechain

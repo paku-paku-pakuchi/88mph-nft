@@ -27,7 +27,7 @@ library NFTDescriptor {
                         bytes(
                             abi.encodePacked(
                                 '{"name":"',
-                                string(abi.encodePacked(params.symbol, '-NFT')),
+                                string(abi.encodePacked(params.name, '-NFT')),
                                 '", "description":"',
                                 generateDescription(),
                                 '", "image": "',
