@@ -82,7 +82,7 @@ library NFTDescriptor {
                 owner: addressToString(params.owner),
                 name: params.name,
                 symbol: params.symbol,
-                color0: toColorHex(uint256(keccak256(abi.encodePacked(params.owner, params.tokenId))), 136),
+                color0: toColorHex(uint256(keccak256(abi.encodePacked(params.owner, params.tokenId))), 140),
                 color1: toColorHex(uint256(keccak256(abi.encodePacked(params.owner, params.tokenId))), 0)
             });
 
